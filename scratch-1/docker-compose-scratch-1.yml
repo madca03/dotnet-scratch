@@ -1,0 +1,11 @@
+﻿version: "3.8"
+
+services:
+  console-dotnet:
+    image: console-dotnet
+    container_name: console-dotnet
+    build:
+        context: .
+        dockerfile: ./scratch-1/Dockerfile
+    environment:
+        - testEnv=HelloEnv
