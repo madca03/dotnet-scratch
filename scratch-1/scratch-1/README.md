@@ -25,3 +25,13 @@ Starting console-dotnet ... done
 Attaching to console-dotnet
 console-dotnet    | Hello World! testEnv: HelloEnv
 ```
+
+## Test getting environment variable in Windows
+
+1. Open a command prompt in the project folder
+2. Set a temporary environment variable
+    i.e. `set testEnv=helloEnv`
+3. Run dotnet application via cmd prompt
+    `dotnet run`
+
+    Output: `Hello World! testEnv: helloEnv`
